@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header id="header">
+            <h1 id="title" class="title">Survey</h1>
+            <p id="description" class="header_description">
+                Survey done by Washigton in Sb
+            </p>
+        </header>
+
+        <form action="" id="survey-form" class="form">
+            <div class="form__input-container">
+                <label for="name" id="name-label">Type your Name</label>
+                <input required type="text" id="name" class="form__input" placeholder="Enter your name" />
+            </div>
+
+            <div class="form__input-container">
+                <label for="email" id="email-label">Type your Email</label>
+                <input required type="email" id="email" class="form__input" placeholder="Enter your email"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" />
+            </div>
+
+            <div class="form__input-container">
+                <label for="number" id="number-label">Set your Age</label>
+                <input type="number" id="number" class="form__input" placeholder="Age" min="0" max="120" />
+            </div>
+
+            <div class="form__input-container">
+                <label for="dropdown">Which is your currento role</label>
+                <select name="role" id="dropdown">
+                    <option value="Pasantito">Pasantito</option>
+                    <option value="Dev">Dev</option>
+                    <option value="No ingeniero">No ingeniero</option>
+                </select>
+            </div>
+
+            <div class="form__input-container">
+                <label for="">Which is your prefered location?</label>
+            
+                <br />
+            
+                <label for="home"><input type="radio" value="home" name="location" id="home" /> Home
+                </label>
+            
+                <br />
+            
+                <label for="office"><input type="radio" value="office" name="location" id="office" /> Office
+                </label>
+            
+                <label for="uni"><input type="radio" value="uni" name="location" id="uni" /> Uni
+                </label>
+            </div>
+
+            <div class="form__input-container">
+                <label for="">What kind of projects do you like the most?</label>
+
+                <br />
+
+                <label for="frontend"><input value="frontend" type="checkbox" name="frontend" id="frontend" /> Frontend
+                </label>
+
+                <br />
+
+                <label for="backend"><input value="backend" type="checkbox" name="backend" id="backend" /> Backend
+                </label>
+
+                <br />
+
+                <label for="haskell"><input value="haskell" type="checkbox" name="haskell" id="haskell" /> Haskell
+                </label>
+            </div>
+
+            <div class="form__input-container">
+                <label for="textarea">Any comments or suggestions?</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" id="submit" class="form__submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
